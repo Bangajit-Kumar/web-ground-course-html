@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<body>
+    <div>
+        <!-- Header Area Start -->
+        <header class="header_area">
+            <section class="nav">
+                <div>
+                    <h1>Media Gallery</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="../Assignments/index.html">Home</a></li>
+                            <li><a href="../Assignments/about.html">About</a></li>
+                            <li><a href="../Assignments/media.html">Media</a></li>
+                            <LI><a href="../Assignments/contact.html">Contact</a></LI>
+                            <Li><a href="../Assignments/survey.html">Survey</a></Li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <!-- Header Area End -->
+        <!-- Main Area Start -->
+        <main class="main-area">
+            <section class="Explore_Media">
+                <div>
+                    <h2>Explore Media</h2>
+                    <p>Enjoy our <mark>curated</mark> collection <strong>learning media</strong>.</p>
+                    <picture>
+                        <img src="../assets/images/Woman-In-Berlin.jpg" width="300px" height="200px" alt="Woman-In-Berlin"/>
+                        <source srcset="
+                        ../assets/images/Woman-In-Berlin-450px.avif
+                        ../assets/images/Woman-In-Berlin-450px.jpg
+                        ../assets/images/Woman-In-Berlin-450px.webp" media="(max-width: 450px)"/>
+                        <source srcset="
+                        ../assets/images/Woman-In-Berlin-900px.avif
+                        ../assets/images/Woman-In-Berlin-900px.jpg
+                        ../assets/images/Woman-In-Berlin-900px.webp" media="(max-width: 900px)"/>
+                        <source srcset="
+                        ../assets/images/Woman-In-Berlin-1500px.avif
+                        ../assets/images/Woman-In-Berlin-1500px.jpg
+                        ../assets/images/Woman-In-Berlin-1500px.webp" media="(max-width: 1500px)"/>
+                    </picture>
+                    <p><small>Responsive Image</small></p>
+                    <video controls preload="none" muted poster="../assets/images/Screenshot_1.png" width="300px">
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/mp4"/>
+                        <p>video not suported in this browser</p>
+                    </video>
+                    <p><small>Learning Video</small></p>
+                    <audio controls preload="none">
+                        <source src="../assets/Audio/horse.ogv" type="audio/ogg"/>
+                        <p>Audio not supported in this browser</p>
+                    </audio>
+                    <p><small>Background Audio (Looping)</small></p>
+                </div>
+            </section>
+            <hr/>
+            <section class="image-map">
+                <div>
+                    <h3>Image Map</h3>
+                    <img
+                        src="../assets/images/comp-desk-imagemap-300px.jpg"
+                        alt="computer-desk"
+                        width="300px"
+                        height="200px"
+                        usemap="#image-map"
+                    />
+                    <map name="image-map">
+                        <area
+                            alt="Laptop"
+                            title="Laptop"
+                            shape="rect"
+                            coords="88,182,212,25"
+                            href="https://en.wikipedia.org/wiki/Laptop"
+                            target="_blank"
+                        />
+                        <area
+                            alt="notebook"
+                            title="notebook"
+                            shape="rect"
+                            coords="16,101,75,177"
+                            href="https://en.wikipedia.org/wiki/Notebook"
+                            target="_blank"
+                        />
+                        <area
+                            alt="mobile"
+                            title="mobile"
+                            shape="rect"
+                            coords="219,91,245,130"
+                            href="https://en.wikipedia.org/wiki/Mobile_phone"
+                            target="_blank"
+                        />
+                        <area
+                            alt="cup-of-coffee"
+                            title="cup-of-coffee"
+                            shape="circle"
+                            coords="246,158,22"
+                            href="https://en.wikipedia.org/wiki/Coffee"
+                            target="_blank"
+                        />
+                    </map>
+                </div>
+            </section>
+            <section class="media_list">
+                <div>
+                    <h3>Media List</h3>
+                    <ol>
+                        <li>
+                            <a 
+                                href="https://www.pexels.com/photo/young-woman-enjoying-scent-of-red-roses-outdoors-31618714/" 
+                                target="_blank"
+                                >Image Sample</a
+                            >
+                        </li>
+                        <li>
+                            <a 
+                                href="https://www.pexels.com/video/serene-rainfall-in-a-pine-forest-31479961/" 
+                                target="_blank"
+                                >Video Sample</a
+                            >
+                        </li>
+                    </ol>
+                    <dl>
+                        <dt>Media Stats</dt>
+                        <dd>Visual and audio content</dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="code">
+                <div>
+                    <h4>Media Code</h4>
+                    <pre>             <code><kbd><</kbd><kbd>audio controls></kbd><kbd><</kbd><kbd>source src="audio.mp3"></kbd><kbd><</kbd><kbd>/audio></kbd></code></pre>
+
+                    <p>Use <kbd>Space</kbd> to play.Variable: <var>sound</var>.Output: <samp>Playing</samp>.</p>
+                </div>
+            </section>
+            <section class="media_stats">
+                <div>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Images</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Videos</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Total: 8</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+            <section class="quotes">
+                <p>
+                    <q>Media inspires learning.</q>
+                </p>
+            </section>
+        </main>
+        <!-- Main Area End -->
+        <!-- Footer Area Start -->
+        <footer class="footer">
+            <section class="footer section">
+                <div>
+                    <p><small>&copy;2025</small> | <a href="../Assignments/index.html">Home</a></p>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

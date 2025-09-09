@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+</head>
+<body>
+    <div>
+        <!-- Header Area Start -->
+        <header class="header_area">
+            <section class="nav">
+                <div>
+                    <h1>Learning Survey</h1>
+                 <nav>
+                     <ul>
+                         <li><a href="../Assignments/index.html">Home</a></li>
+                         <li><a href="../Assignments/about.html">About</a></li>
+                         <li><a href="../Assignments/media.html">Media</a></li>
+                         <LI><a href="../Assignments/contact.html">Contact</a></LI>
+                         <Li><a href="../Assignments/survey.html">Survey</a></Li>
+                     </ul>
+                 </nav>
+                </div>
+            </section>
+        </header>
+        <!-- Header Area End -->
+        <!-- Main Area Start -->
+        <main class="main_area">
+            <section class="feedback">
+                <div>
+                    <h3>Your Feedback</h3>
+                </div>
+                <div>
+                    <label for="f_name">Full Name:</label>
+                    <br/>
+                    <input type="text" name="f_name" id="f_name" placeholder="Your Name"/>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <br/>
+                    <input type="email" name="email" id="email" placeholder="you@example.com" pattern=".+@gmail.com"/>
+                </div>
+                <div>
+                    <label for="website">Website:</label>
+                    <br/>
+                    <input type="url" name="website" id="website" placeholder="https://your-site.com"/>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <br/>
+                    <input type="tel" name="phone" id="phone" placeholder="10-digit number" pattern="[0-9]+"/>
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <br/>
+                    <input type="number" name="age" id="age" placeholder="Age" min="18" max="100"/>
+                </div>
+                <div>
+                    <label for="sdate">Start Date:</label>
+                    <br/>
+                    <input type="date" name="sdate" id="sdate"/>
+                </div>
+                <div>
+                    <label for="event_time">Event Time:</label>
+                    <br/>
+                    <input type="datetime-local" name="event_time" id="event_time"/>
+                </div>
+                <div>
+                    <label for="week">Preferred Week:</label>
+                    <br/>
+                    <input type="week" name="Week" id="week"/>
+                </div>
+                <div>
+                    <label for="color">Favorite Color:</label>
+                    <br/>
+                    <input type="color" name="color" id="color"/>
+                </div>
+                <div>
+                    <label for="rate">Rating (0-10) :</label>
+                    <br/>
+                    <input type="range" name="rate" id="rate" min="0" max="10" value="5" step="1"/>
+                </div>
+                <div>
+                    <caption>Experience level:</caption>
+                    <br/>
+                    <input type="radio" name="experience" value="beginner" id="beginner"/>
+                    <label for="beginner">Beginner</label>
+                    <br/>
+                    <input type="radio" name="experience" value="advanced" id="advanced"/>
+                    <label for="advanced">Advanced</label>
+                </div>
+                <div>
+                    <caption>Interests:</caption>
+                    <br/>
+                    <input type="checkbox" name="interest" id="coding" value="coding"/>
+                    <label for="coding">Coding</label>
+                    <br/>
+                    <input type="checkbox" name="interest" id="design" value="design"/>
+                    <label for="design">Design</label>
+                </div>
+                <div>
+                    <label for="country">Country:</label>
+                    <br/>
+                        <select name="country" id="country">
+                            <optgroup label="Asia">
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="India">India</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Malaysia">Malaysia</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="London">London</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Italy">Italy</option>
+                            </optgroup>
+                            <optgroup label="America">
+                                <option value="United States">United States</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Canada">Canada</option>
+                            </optgroup>
+                        </select>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="feedback">Feedback:</label>
+                    <br/>
+                    <textarea name="feedback" id="feedback" cols="40" rows="3">Sample Text...</textarea>
+                </div>
+                <div>
+                    <label for="completion">Completion</label>
+                    <progress id="completion" max="100" value="80">80/100</progress>
+                </div>
+                <label for="satisfaction">Satisfaction:</label>
+                <br/>
+                <meter id="meter" value="70" min="0" max="100" high="70" low="30" optimum="70">70/100 </meter>
+                <div>
+                    <button type="submit" name="submit" id="submit" value="submit" disabled><strong>Send</strong></button>
+                </div>
+            </section>
+            <hr/>
+            <section class="media_section">
+                <div>
+                    <h3>Survey Media</h3>
+                    <picture>
+                        <img src="../assets/images/comp-desk-imagemap-300px.jpg" width="300px" height="200px" alt="comp-desk"/>
+                    </picture>
+                    <p><small>Survey Visual</small></p>
+                </div>
+                <div>
+                    <video controls muted preload="none" poster="../assets/images/Screenshot_1.png" width="300px">
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/mp4"/>
+                        <p>video not suported in this browser</p>
+                    </video>
+                    <p><small>Survey Visual</small></p>
+                </div>
+                <div>
+                    <audio controls muted preload="none">
+                        <source src="../assets/Audio/horse.ogv" type="audio/ogg"/>
+                        <p>Audio not suported in this browser</p>
+                    </audio>
+                    <P><small>Survey Audio (Autoplay)</small></P>
+                </div>
+            </section>
+            <section class="servey">
+                <div>
+                    <h3>Survey Details</h3>
+                    <ul>
+                        <li>Questions</li>
+                        <li>Responses
+                            <ol>
+                                <li>Text</li>
+                                <li>Choices</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <dl>
+                        <dt>Survey</dt>
+                        <dd>Collect feedback</dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="form_code">
+                <div>
+                    <h3>Form Code</h3>
+                    <pre><code>               <kbd><</kbd><hbd>form></hbd><kbd><</kbd><kbd>input type="text"></kbd><kbd><</kbd><kbd>/form></kbd> </code></pre>
+                    <p>Use <kbd>Ctrl</kbd> + <kbd>S</kbd> to save. Variable: <var>form</var>. Output: <samp>Saved</samp>.</p>
+                </div>
+            </section>
+        </main>
+        <!-- Main Area End -->
+        <!-- Footer Area Start -->
+        <footer class="footer">
+            <section class="footer_area">
+                <div>
+                    <p><small>&copy;2025</small> | <a href="../Assignments/index.html">Home</a></p>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer Area End -->
+    </div>
+</body>
+</html>
