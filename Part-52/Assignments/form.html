@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <!-- Header Area Start -->
+        <header class="header_area">
+            <section class="nav">
+                <div>
+                    <h1>Submit Your details</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="../Assignments/index.html">Home</a></li>
+                            <li><a href="../Assignments/about.html">About</a></li>
+                            <li><a href="../Assignments/gallery.html">Gallery</a></li>
+                            <li><a href="../Assignments/contact.html">Contact</a></li>
+                            <li><a href="../Assignments/form.html">Form</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <!-- Header Area End -->
+        <!-- Main Area Start -->
+        <main class="main_area">
+            <section class="form-area">
+                <div>
+                    <h2>Form Example</h2>
+                    <form action="#" method="post">
+                        <P>
+                            <label for="fname">Name: </label>
+                            <br/>
+                            <input type="text" name="fname" id="fname" placeholder="Enter name" required/>
+                            <br/>
+                            <label for="email">Email: </label>
+                            <br/>
+                            <input type="email" name="email" id="email" placeholder="Enter Email" pattern=".+@gmail.com"/>
+                            <br/>
+                            <label for="url">Website:</label>
+                            <br/>
+                            <input type="url" name="url" id="url" placeholder="https://example.com"/>
+                            <br/>
+                            <label for="phone">Phone: </label>
+                            <br/>
+                            <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]+"/>
+                            <br/>
+                            <label for="age">Age: </label>
+                            <br/>
+                            <input type="number" name="age" id="age" min="20" max="100"/>
+                            <br/>
+                            <label for="d_o_b">Birth Date: </label>
+                            <br/>
+                            <input type="date" name="d_o_b" id="d_o_b" required/>
+                            <br/>
+                            <label for="Event">Event Time: </label>
+                            <br/>
+                            <input type="datetime-local" id="Event" name="Event"/>
+                            <br/>
+                            <label for="week">Week:</label>
+                            <br/>
+                            <input type="week" name="week" id="week"/>
+                            <br/>
+                            <label for="color">Favorite Color: </label>
+                            <br/>
+                            <input type="color" name="color" id="color"/>
+                            <br/>
+                            <label for="satisfaction">Satisfaction: </label>
+                            <br/>
+                            <input type="range" name="satisfaction" id="satisfaction" value="50" min="0" max="100" step="10"/>
+                            <br/>
+                            <caption>Gender:</caption>
+                            <br/>
+                            <input type="radio" name="Gender" id="male" value="male"/>
+                            <label for="Gender">Male</label>
+                            <br/>
+                            <input type="radio" name="Gender" id="female" value="female"/>
+                            <label for="Gender">Female</label>
+                            <br/>
+                            <Caption>Hobbies:</Caption>
+                            <br/>
+                            <input type="checkbox" name="reading" id="reading" value="reading"/>
+                            <label for="reading">Reading</label>
+                            <br/>
+                            <input type="checkbox" name="gaming" id="gaming" value="gaming"/>
+                            <label for="gaming">Gameing</label>
+                            <br/>
+                            <label for="city">City: </label>
+                            <br/>
+                            <input type="text" name="city" id="city" list="city-name" placeholder="Select Or Type"/>
+                            <datalist id="city-name">
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Cottogram">Cottogram</option>
+                                <option value="Khulna">Khulna</option>
+                                <option value="Barisal">Barisal</option>
+                                <option value="Rajsahi">Rajsahi</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Maymanshig">Maymanshig</option>
+                                <option value="Rangpur">Rangpur</option>
+                            </datalist>
+                            <br/>
+                            <label for="message">Message: </label>
+                            <br/>
+                            <textarea
+                            name="message" id="message" cols="50" rows="4" readonly placeholder="This is read-only text."></textarea>
+                            <br/>
+                            <label for="progress">Progress: </label>
+                            <progress
+                            id="progress" name="progress" value="50" max="100">50/100</progress>
+                            <br/>
+                            <label for="meter">Meter: </label>
+                            <meter
+                            id="meter" value="70" min="0" max="100" high="70" low="30" optimum="70">70/100</meter>
+                            <br/>
+                            <br/>
+                            <button type="submit" name="sumbit" id="submit" value="submit" disabled><strong>Submit</strong></button>
+                            <button type="reset" name="reset" id="reset" value="reset" disabled><strong>Reset</strong></button>
+                        </p>
+                    </form>
+                </div>
+            </section>
+            <hr/>
+            <section class="media-area">
+                <div>
+                    <h3>Form Media</h3>
+                    <picture>
+                        <img src="https://fastly.picsum.photos/id/381/200/300.jpg?hmac=DHcGsLBoQPJC-_rudxS4AdZuSE9UoOFP2U2v2veUAok" 
+                        alt="picsum.photos" height="200px" width="300px"/>
+                        <p><small>Form Image</small></p>
+                    </picture>
+                </div>
+                <div>
+                    <video controls preload="none" muted poster="../assets/images/Screenshot_1.png" width="300px">
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/mp4"/>
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/ogg"/>
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/webm"/>
+                    </video>
+                    <p><small>Form Video</small></p>
+                </div>
+            </section>
+            <section class="form_features">
+                <div>
+                    <h3>From Features</h3>
+                    <ul>
+                        <li>Required Fields</li>
+                        <li>Validation with <samp><strong>pattern</strong></samp></li>
+                    </ul>
+                    <dl>
+                        <dt>Form</dt>
+                        <dd>User input collection</dd>
+                    </dl>
+                    <q>Forms are essential for interaction.</q>
+                </div>
+            </section>
+            <section class="code-Example">
+                <h3>Code Example</h3>
+                <pre>               <code><input type="text" name="code" id="code"/></code></pre>
+                <p>Press <kbd>Tab</kbd> to move. Variable: <var>input</var>. Output: <samp>Submitted</samp>.</p>
+            </section>
+        </main>
+        <!-- Main Area End -->
+        <!-- Footer Area Start -->
+        <footer class="footer_area">
+            <section class="footer">
+                <div>
+                    <p><small>&COPY;2025</small> | <a href="../Assignments/index.html">Home</a></p>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer Area End -->
+    </div>
+</body>
+</html>

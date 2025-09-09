@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+    <div>
+        <!-- Header Area Start -->
+        <header class="header_area">
+            <section class="nav">
+                <div>
+                    <h1>Image & Video Gallery</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="../Assignments/index.html">Home</a></li>
+                            <li><a href="../Assignments/about.html">About</a></li>
+                            <li><a href="../Assignments/gallery.html">Gallery</a></li>
+                            <li><a href="../Assignments/contact.html">Contact</a></li>
+                            <li><a href="../Assignments/form.html">Form</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <!-- Header Area End -->
+        <!-- Main Area Start -->
+        <main class="main_area">
+            <section class="Media">
+                <div>
+                    <h2>Our Media</h2>
+                    <p>
+                        Here are some <mark>beautiful</mark> images and videos from Picsum and Mixkit:
+                    </p>
+                </div>
+            </section>
+            <section class="picture">
+                <div>
+                    <picture>
+                        <img src="../assets/images/gallery-image-1.jpg" alt="cup-of-coffee-1" width="300px" height="200px"/>
+                        <source srcset="../assets/images/gallery-image-1-450px.jpg" media="(max-width: 450px)"/>
+                        <source srcset="../assets/images/gallery-image-1-900px.jpg" media="(max-width: 900px)"/>
+                        <source srcset="../assets/images/gallery-image-1-1500px.jpg" media="(max-width: 1500px)"/>
+                    </picture>
+                    <br/>
+                    <picture>
+                        <div>
+                            <img src="../assets/images/gallery-image-2.jpg" alt="cup-of-coffee-2" width="300px" height="200px"/>
+                            <source srcset="../assets/images/gallery-image-2-450px.jpg" media="(max-width: 450px)"/>
+                            <source srcset="../assets/images/gallery-image-2-900px.jpg" media="(max-width: 900px)"/>
+                            <source srcset="../assets/images/gallery-image-2-1500px.jpg" media="(max-width: 1500px)"/>
+                        </div>
+                    </picture>
+                </div>
+            </section>
+            <section class="video">
+                <div>
+                    <video controls muted preload="none" poster="../assets/images/Screenshot_1.png" width="300">
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/mp4"/>
+                    </video>
+                    <p><small>Gallery Video</small></p>
+                </div>
+            </section>
+            <hr/>
+            <section class="img-map">
+                <div>
+                    <h3>Image Map</h3>
+                    <img
+                      src="../assets/images/cup-of-coffee-imagemap.jpg" 
+                      alt="cup-of-coffee-imagemap" 
+                      width="300px" 
+                      height="200px" 
+                      usemap="#coffee"
+                    />
+                    <map name="coffee">
+                        <area
+                            alt="cup-of-coffee"
+                            title="cup-of-coffee"
+                            shape="circle"
+                            coords="223,116,72"
+                            href="https://en.wikipedia.org/wiki/Coffee"
+                            target="_blank"
+                        />
+                        <area
+                            alt="notebook"
+                            title="notebook"
+                            shape="poly"
+                            coords="3,0,1,128,82,153,199,4"
+                            href="https://en.wikipedia.org/wiki/Notebook"
+                            target="_blank"/>
+                    </map>
+                </div>
+            </section>
+            <section class="list-media">
+                <div>
+                    <h3>List of Media</h3>
+                    <ol>
+                        <li>
+                            <a
+                             href="https://fastly.picsum.photos/id/487/200/300.jpg?hmac=jDYxTxKFMi18Gu5h9qt9ttwJKCk1-J6bZeHDtXGL2Vk"
+                             title="Grass flower"
+                             target="_blank"
+                             >Image 1
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://www.youtube.com/watch?v=5DRcSRiwVWs" 
+                                title="Hare Krishna Hare Rama" 
+                                target="_blank"
+                                >Video 1
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="description-list">
+                <dl>
+                    <dt>Picsum</dt>
+                    <dd>Random Image Genarator</dd>
+                </dl>
+                <dl>
+                    <dt>Mixkit</dt>
+                    <dd>Free Stock Videos</dd>
+                </dl>
+            </section>
+            <section class="code_for_media">
+                <pre>
+                    <video controls muted preload="none" poster="../assets/images/Screenshot_1.png" width="300px">
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/mp4"/>
+                    </video>
+                </pre>
+                <p>
+                    Press <kbd>F5</kbd> to refresh. Variable: <var>media</var>. Output: <samp>Loaded</samp>.
+                </p>
+            </section>
+            <section class="media_info">
+                <div>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Image</td>
+                                <td>300x200</td>
+                            </tr>
+                            <tr>
+                                <td>ideo</td>
+                                <td>300x200</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">End</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <!-- Main Area End -->
+        <!-- Footer Area Start -->
+        <footer class="footer">
+            <section class="footer_area">
+                <p>
+                    <q>Media enhances websites.</q>
+                </p>
+                <small>&copy; | 2025</small> <a href="../Assignments/index.html">Home</a>
+            </section>
+        </footer>
+        <!-- Footer Area End -->
+    </div>
+</body>
+</html>
