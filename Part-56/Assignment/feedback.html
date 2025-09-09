@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <div>
+        <!-- Header Area Start -->
+        <header class="header_area">
+            <section class="nav">
+                <div>
+                    <h1>Feedback</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="../Assignment/index.html">Home</a></li>
+                            <li><a href="../Assignment/profile.html">Profile</a></li>
+                            <li><a href="../Assignment/resources.html">Resouce</a></li>
+                            <li><a href="../Assignment/connect.html">Connect</a></li>
+                            <li><a href="../Assignment/feedback.html">Feedback</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <!-- Header Area End -->
+        <!-- Main Area Start -->
+        <main class="main_area">
+            <section class="Thoughts">
+                <div>
+                    <h2>Share Your Thoughts</h2>
+                </div>
+                <div>
+                    <label for="fname">Name:</label>
+                    <br/>
+                    <input type="text" name="f-name" id="fname" placeholder="Your Name" required/>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <br/>
+                    <input type="email" name="email" id="email" placeholder="email@domain.com" pattern=".+@gmail.com"/>
+                </div>
+                <div>
+                    <label for="website">Website:</label>
+                    <br/>
+                    <input type="url" name="website" id="website" placeholder="https://your-site.com"/>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <br/>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]+" placeholder="10-digit number"/>
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <br/>
+                    <input type="number" name="age" id="age" min="18" max="80"/>
+                </div>
+                <div>
+                    <label for="date">Date:</label>
+                    <br/>
+                    <input type="date" name="date" id="date"/>
+                </div>
+                <div>
+                    <label for="time">Time:</label>
+                    <br/>
+                    <input type="datetime-local" name="time" id="time"/>
+                </div>
+                <div>
+                    <label for="week">Week:</label>
+                    <br/>
+                    <input type="week" name="week" id="week"/>
+                </div>
+                <div>
+                    <label for="color">Mood Color:</label>
+                    <br/>
+                    <input type="color" name="color" id="color"/>
+                </div>
+                <div>
+                    <label for="rating">Rating:</label>
+                    <br/>
+                    <input type="range" name="rating" id="rating" min="0" max="10" value="5" step="1"/>
+                </div>
+                <caption>Tech Interest:</caption>
+                <div>
+                    <input type="radio" name="tech_interest" id="software" value="software"/>
+                    <label for="software">Software</label>
+                    <br/>
+                    <input type="radio" name="tech_interest" id="hardware" value="hardware"/>
+                    <label for="hardware">Hardware</label>
+                </div>
+                <caption>Skills:</caption>
+                <div>
+                    <input type="checkbox" name="skills" id="coding" value="coding"/>
+                    <label for="coding">Coding</label>
+                    <br/>
+                    <input type="checkbox" name="skills" id="design" value="design"/>
+                    <label for="design">Design</label>
+                </div>
+                <div>
+                    <label for="region">Region:</label>
+                    <br/>
+                    <input type="text" name="region" id="region" placeholder="Your region"/>
+                </div>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <br/>
+                    <textarea name="comments" id="comments" cols="50" rows="4">Sample feedback</textarea>
+                </div>
+                <div>
+                    <label for="Progress">Progress:</label>
+                    <br/>
+                    <progress id="progress" value="60" max="100">60/100</progress>
+                </div>
+                <div>
+                    <label for="experience">Experience:</label>
+                    <br/>
+                    <meter id="experience" value="70" min="0" max="100" low="30" high="70" optimum="70">70/100</meter>
+                </div>
+                <div>
+                    <button type="submit" name="submit" id="submit" disabled>Submit</button>
+                </div>
+                <hr/>
+            </section>
+            <section class="feedback_Media">
+                <div>
+                    <h3>Feedback Media</h3>
+                </div>
+                <div>
+                    <picture>
+                        <img 
+                            src="https://fastly.picsum.photos/id/18/2500/1667.jpg?hmac=JR0Z_jRs9rssQHZJ4b7xKF82kOj8-4Ackq75D_9Wmz8"
+                            alt="image"
+                            width="300px"
+                            height="200px"
+                        />
+                    </picture>
+                    <p>Feedback Visual</p>
+                </div>
+                <div>
+                    <video controls muted preload="none" poster="../assets/images/Screenshot_1.png" width="300px">
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/mp4"/>
+                        <p>video not suported in this browser</p>
+                    </video>
+                    <p>Feedback Video</p>
+                </div>
+                <div>
+                    <audio controls muted preload="none">
+                        <source src="../assets/Audio/horse.ogv" type="audio/ogg"/>
+                        <p>Audio not suported in this browser</p>
+                    </audio>
+                    <p>Feedback Audio (Autoplay)</p>
+                </div>
+                <div>
+                    <iframe
+                        width="300px"
+                        height="200px"
+                        src="https://www.youtube.com/watch?v=kyLuzKbgXAs"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                    <p>YouTube Feedback</p>
+                </div>
+            </section>
+            <section class="feedback_details">
+                <div>
+                    <h3>Feedback Details</h3>
+                    <ul>
+                        <li>Questions</li>
+                        <li>Answers
+                            <ol>
+                                <li>Text</li>
+                                <li>Rating</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <dl>
+                        <dt>Feedback</dt>
+                        <dd>User input</dd>
+                    </dl>
+                </div>
+                <div>
+                    <h3>Form Code</h3>
+                    <pre>              <code>&lt;input type="text"/&gt;</code></pre>
+                </div>
+                <div>
+                    <p>
+                        Use <kbd>Ctrl</kbd> + <kbd>F</kbd> to find. Variable: <var>input</var>. Output: <samp>Entered</samp>.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <!-- Main Area End -->
+        <!-- Footer Area Start -->
+        <footer class="footer_area">
+            <section class="footer">
+                <div>
+                    <p>
+                        &copy;2025 | <a href="../Assignment/index.html">Home</a>
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer Area End -->
+    </div>
+</body>
+</html>
